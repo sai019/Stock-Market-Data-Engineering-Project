@@ -2,5 +2,6 @@ confluent-kafka
 pandas
 requests
 jsonschema
-
+python-dotenv
+azure-storage-file-datalake
 -e .
