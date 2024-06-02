@@ -4,7 +4,9 @@ import sys
 from datetime import datetime
 from logging.handlers import TimedRotatingFileHandler
 
-log_dir = "logs"
+from src.config import LOG_DIR
+
+log_dir = LOG_DIR
 log_filename = datetime.now().strftime("%d-%m-%Y-%H_%M_%S.log")
 log_filepath = os.path.join(log_dir, log_filename)
 os.makedirs(log_dir, exist_ok=True)
@@ -13,6 +15,7 @@ os.makedirs(log_dir, exist_ok=True)
 
 
 FORMAT = "[%(asctime)s] %(levelname)s: %(message)s (Filename: [%(filename)s] -> Line: %(lineno)d)"
+
 
 file_handler = TimedRotatingFileHandler(
     log_filepath,
