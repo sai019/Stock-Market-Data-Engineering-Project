@@ -4,7 +4,7 @@
 This project guides you through building a real-time data pipeline for stock market data using Kafka.
 
 ## Architecture :<br>
-<img align="center" alt="" src="https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Images/architecture.png" />
+<img align="center" alt="" src="https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Images/Project%20Architecture.gif" />
 
 ## Technology Used :<br>
   - Programming Language - Python
@@ -41,8 +41,8 @@ pip install -r requirements.txt
 ```
 All set now you cloned this project successfully.
 
-## Project Work Flow:<be>
-
+## Project Work Flow:<br>
+1. setup the confluent kafka cluster on the 
 
 
 
