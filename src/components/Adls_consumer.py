@@ -4,10 +4,14 @@ from azure.storage.filedatalake import DataLakeServiceClient
 from confluent_kafka import Consumer
 
 from src.config import (
+    API_KEY,
+    API_SECRET_KEY,
     BOOTSTRAP_SERVER,
     CONNECTION_STRING,
     DIRECTORY_NAME,
     FILE_SYSTEM_NAME,
+    SECURITY_PROTOCOL,
+    SSL_MACHENISM,
     TOPIC_NAME,
 )
 from src.exception.exception import CustomException
@@ -17,7 +21,11 @@ from src.logger.logger import logging
 def get_consumer_config():
     logging.debug("Fetching Kafka consumer configuration.")
     consumer_conf = {
+        "sasl.mechanism": SSL_MACHENISM,
         "bootstrap.servers": BOOTSTRAP_SERVER,
+        "security.protocol": SECURITY_PROTOCOL,
+        "sasl.username": API_KEY,
+        "sasl.password": API_SECRET_KEY,
         "group.id": "stockmarket_group",
         "auto.offset.reset": "latest",
     }
