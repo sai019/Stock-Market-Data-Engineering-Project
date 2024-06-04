@@ -10,6 +10,10 @@ DATA_SET = os.getenv("data_set")
 
 # Confluent-kafka conf
 BOOTSTRAP_SERVER = os.getenv("bootstrap_server")
+API_KEY = os.getenv("API_KEY")
+API_SECRET_KEY = os.getenv("API_SECRET_KEY")
+SECURITY_PROTOCOL = os.getenv("SECURITY_PROTOCOL")
+SSL_MACHENISM = os.getenv("SSL_MACHENISM")
 TOPIC_NAME = os.getenv("topic_name")
 
 # Azure Conf
