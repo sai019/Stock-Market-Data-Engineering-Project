@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-LOG_DIR = os.getenv("log_dir")
 
 DATA_SET = os.getenv("data_set")
 
