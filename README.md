@@ -53,7 +53,7 @@ All set now you cloned this project successfully.
 - This is what a message produced to a Confluent Kafka topic looks like on the confluent dashboard. The image shows the message details, including timestamp, offset, 
     partition, key, and value.
  
-  - <img align="center" alt="" src="https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Images/Message_details.png" height="500"/>
+  - <img align="center" alt="" src="https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Images/Message_details.png" height="400"/>
 - Run ```src/components/Adls_consumer.py``` to consume messages from the Kafka topic and upload them to Azure Data Lake Gen2 as JSON data.
 - Using Azure Data Lake and the serverless SQL pool in Azure Synapse Analytics, you can execute SQL queries on the JSON data stored in Azure Data Lake to gain insights.
 
