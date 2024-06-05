@@ -44,10 +44,10 @@ All set now you cloned this project successfully.
 ## 🚀 Project Work Flow :<br>
 - Confluent Kafka setup :
   - Click on the links below to follow the steps : 
-    1. [Set up the Confluent Kafka cluster.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/ConfluentClusterSetup.md)
-    2. [Create a topic in Confluent Kafka.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Confluent%20Topic%20Creation.md)
-    3. [Create Kafka cluster API keys and secrets.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Kafka%20key%20and%20secrets.md)
-    4. [How to create .env file.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/env_doc.md)
+    1. [Set up the Confluent Kafka cluster.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Docs/ConfluentClusterSetup.md)
+    2. [Create a topic in Confluent Kafka.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Docs/Confluent%20Topic%20Creation.md)
+    3. [Create Kafka cluster API keys and secrets.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Docs/Kafka%20key%20and%20secrets.md)
+    4. [How to create .env file.](https://github.com/sai019/Stock-Market-Data-Engineering-Project/blob/main/Docs/env_doc.md)
 - Create Azure Data Lake Gen2 and Azure Synapse Analytics services in the Azure portal.
 - Execute ```src/components/producer_stream.py``` to generate messages for the Kafka topic.
 - This is what a message produced to a Confluent Kafka topic looks like on the confluent dashboard. The image shows the message details, including timestamp, offset, 
