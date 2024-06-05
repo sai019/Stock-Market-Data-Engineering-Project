@@ -9,17 +9,22 @@ To configure your project, you need to create a `.env` file in the root director
 
 ```env
 # Data Set
-data_set=my_data_set
+data_set = my_data_set # The path of the source data set
+
 
 # Kafka Configuration
-bootstrap_server=my_bootstrap_server
-API_KEY=my_api_key
-API_SECRET_KEY=my_api_secret_key
-SECURITY_PROTOCOL=SSL
-SSL_MECHANISM=PLAIN
-topic_name=my_topic_name
+bootstrap_server = my_bootstrap_server # Your Kafka bootstrap server address
+API_KEY = my_api_key # Your Kafka API key for authentication
+API_SECRET_KEY = my_api_secret_key # Your Kafka API secret key for authentication
+
+# No need to change the values to this
+SECURITY_PROTOCOL = 'SASL_SSL'  # Security protocol for Kafka
+SSL_MECHANISM = 'PLAIN'  # SSL mechanism for authentication
+
+topic_name = my_topic_name # Your Kafka topic name for message publishing
+
 
 # Azure Configuration
-connection_string=my_connection_string
-file_system_name=my_file_system_name
-directory_name=my_directory_name
+connection_string = my_connection_string # Your Azure Storage Account Connection String
+file_system_name = my_file_system_name # Your Azure Data lake Storage file system name
+directory_name = my_directory_name # Your directory name within the Azure Data lake Storage file system
