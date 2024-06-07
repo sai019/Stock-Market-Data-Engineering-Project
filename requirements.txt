@@ -1,7 +1,7 @@
-confluent-kafka
-pandas
-requests
-jsonschema
-python-dotenv
-azure-storage-file-datalake
+azure-storage-file-datalake==12.15.0
+confluent-kafka==2.3.0
+jsonschema==4.21.1
+pandas==2.2.2
+python-dotenv==1.0.1
+requests==2.31.0
 -e .
